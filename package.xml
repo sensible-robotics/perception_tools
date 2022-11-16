@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>perception_tools</name>
+  <version>1.1.0</version>
+  <description>The perception_tools metapackage</description>
+  <maintainer email="mecanita@gmail.com">Ana C.H.Q.</maintainer>
+  
+  <license>BSD</license>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rospy</depend>
+
+<!--  <export>
+    <metapackage/>
+  </export>-->
+</package>
