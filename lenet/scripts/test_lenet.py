@@ -29,6 +29,18 @@ valid_dataset = datasets.MNIST(root='mnist_data',
 # Figure
 fig = plt.figure()
 
+print("Val and type")
+print(valid_dataset[0][0])
+print("Size of vd[n][0]")
+print( (valid_dataset[0][0]).size() )
+print("type and size of unsqueezed :")
+print(type(valid_dataset[0][0].unsqueeze(0)) )
+print((valid_dataset[0][0].unsqueeze(0)).size() )
+
+print("Unsqueezed")
+print(valid_dataset[10][0].dtype)
+print(valid_dataset[10][0])
+
 for index in range(1, ROW_IMG * N_ROWS + 1):
     plt.subplot(N_ROWS, ROW_IMG, index)
     plt.axis('off')
