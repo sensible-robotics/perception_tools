@@ -22,6 +22,7 @@ N_EPOCHS = 15
 IMG_SIZE = 32
 N_CLASSES = 10
 
+root_path = "/home/ana/Research/cnn/perception_tools/lenet"
 
 ## Data
 # define transforms
@@ -59,6 +60,6 @@ criterion = nn.CrossEntropyLoss()
 model, optimizer, _ = training_loop(model, criterion, optimizer, train_loader, valid_loader, N_EPOCHS, DEVICE)
 
 # Save
-torch.save(model.state_dict(), "ana_lenet.pt")
+torch.save(model.state_dict(), root_path + "/lenet_model.pt")
 
 
