@@ -4,7 +4,7 @@
 
 #include <opencv2/opencv.hpp>
 
-  std::string root_path = "/home/ana/Research/cnn/perception_tools/lenet";
+std::string root_path = "/home/ana/Research/cnn/perception_tools/lenet";
 
 
 at::Tensor getTensorFromImg(std::string _subpath)
