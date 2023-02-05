@@ -39,9 +39,6 @@ print(input_batch.size())
 with torch.no_grad():
   output = model(input_batch)
   
-print("Output of 1000 classification results")
-print(output[0])
-
 probabilities = torch.nn.functional.softmax(output[0], dim=0)
 print(probabilities)
 
